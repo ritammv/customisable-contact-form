@@ -86,6 +86,7 @@ export const StyledButton = styled.input`
 export const StyledForm = styled.form`
   max-width: ${(props:any) => props.theme.width};
   margin: auto;
+  margin-top: 1em;
   color: ${(props: any) => props.theme.primaryColor};
   background-color: ${(props:any) => props.theme.backgroundColor};
   padding: ${(props:any) => props.theme.formPadding};

@@ -1,17 +1,17 @@
-import React from 'react'
+import React , { useState} from 'react'
 import Form  from 'customisable-contact-form'
 import { Heading, FirstName, LastName, Email, Message, SubmitButton } from 'customisable-contact-form'
 import styled from 'styled-components'
+import OptionForm from './components/options'
 
 
 const Container = styled.div`
 display: flex;
 justify-content: space-between;
-min-height: 100vh;
-
+height: 100vh;
+overflow: hidden;
 
 `
-
 
 const FormContainer = styled.div`
 flex: 1;
@@ -21,28 +21,29 @@ padding: 40px;
 border: 1px solid lightgrey;
 background-color: red;
 height: auto;
-
-
-
 `
 
 const Customisation = styled.div`
 flex: 2;
 display: flex;
-justify-content: flex-start;
+justify-content: center;
 flex-direction: row;
 background-color: blue;
+padding-left: 30px;
+overflow: scroll;
 
 `
 
 
 const App = () => {
+
+  const [theme, setTheme] = useState({});
+  const [title, setTitle] = useState('');
+
   return (
     <Container className="demo">
       <FormContainer className="form_demo">
-        <Form theme={{
-      //your customisations go here!
-        }}>
+        <Form theme={theme}>
           <Heading title={"Get in touch!"} />
           <FirstName />
           <LastName  />
@@ -54,8 +55,12 @@ const App = () => {
     
 
     <Customisation className="customisation">
-      <h1>Customisations go here!</h1>
-
+      <OptionForm
+        title = {title}
+        setTitle = {setTitle}
+        theme = {theme}
+        setTheme = {setTheme}
+        />
     </Customisation>
     </Container>
   )
