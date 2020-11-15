@@ -55,6 +55,7 @@ const fonts: string[] = [
 const Fonts = ({ setTheme }: OptionProps) => {
 
   const handleThemeChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    event.preventDefault();
     const value = event.target.value;
     setTheme({primaryFont : `${value}`});
   };

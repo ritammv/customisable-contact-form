@@ -14,7 +14,7 @@ overflow: hidden;
 `
 
 const FormContainer = styled.div`
-flex: 1;
+flex: 2;
 display: flex;
 flex-direction: row;
 padding: 40px;
@@ -24,7 +24,7 @@ height: auto;
 `
 
 const Customisation = styled.div`
-flex: 2;
+flex: 3;
 display: flex;
 justify-content: center;
 flex-direction: row;
@@ -44,7 +44,7 @@ const App = () => {
     <Container className="demo">
       <FormContainer className="form_demo">
         <Form theme={theme}>
-          <Heading title={"Get in touch!"} />
+          <Heading title={title} />
           <FirstName />
           <LastName  />
           <Email/>
