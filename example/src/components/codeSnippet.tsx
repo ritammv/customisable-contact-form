@@ -39,34 +39,22 @@ const CodeSnippet = ({ theme, title }: codeProps) => {
     Prism.highlightAll()
   })
 
+  const keys = Object.keys(theme)
+  const string = keys
+    .reduce((a, b) => {
+      if (!theme[b]) return a
+      else
+        return (
+          a +
+          `${b}: ${theme[b]},
+    `
+        )
+    }, ``)
+    .trim()
+
   const codeOutput = `
   <Form theme={
-    primaryColor: '${theme.primaryColor}',
-    primaryFont: '${theme.primaryFont}',
-    inputBorderRadius: '${theme.inputBorderRadius}',
-    inputBorder: '${theme.inputBorder}',
-    inputBackgroundColor: '${theme.inputBackgroundColor}',
-    width: '${theme.width}',
-    fontWeight: '${theme.fontWeight}',
-    buttonFontColor: '${theme.buttonFontColor}',
-    headingColor: '${theme.headingColor}',
-    headingSize: '${theme.headingSize}',
-    backgroundColor: '${theme.backgroundColor}',
-    buttonBackgroundColor: '${theme.buttonBackgroundColor}',
-    formPadding: '${theme.formPadding}',
-    formBorderRadius: '${theme.formBorderRadius}',
-    headingBackgroundColor: '${theme.headingBackgroundColor}',
-    headingBorderRadius: '${theme.headingBorderRadius}',
-    buttonPadding: '${theme.buttonPadding}',
-    buttonLetterSpacing: '${theme.buttonLetterSpacing}',
-    messageInputHeight: '${theme.messageInputHeight}',
-    formBorderColor: '${theme.formBorderColor}',
-    formBorderWeight: '${theme.formBorderWeight}',
-    headingBorderBottom: '${theme.headingBorderBottom}',
-    headingBorderColor: '${theme.headingBorderColor}',
-    inputBorderWeight: '${theme.inputBorderWeight}',
-    inputBorderColor: '${theme.inputBorderColor}'
-
+    ${string}
     }
   <Heading title='${title}'/>
   <FirstName/>
