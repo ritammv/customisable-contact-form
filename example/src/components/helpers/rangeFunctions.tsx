@@ -1,22 +1,31 @@
 type rangeFunctionProps = {
   value: string
-  setTheme: any
+  setTheme: React.Dispatch<React.SetStateAction<{}>>
   measureUnit?: string
 }
 
 function fontWeight({ value, setTheme }: rangeFunctionProps) {
   const fontWeight = value
-  setTheme({ fontWeight })
+  setTheme((theme) => ({ ...theme, fontWeight }))
 }
 
 function width({ value, setTheme, measureUnit }: rangeFunctionProps) {
   const width = value + measureUnit
-  setTheme({ width })
+  setTheme((theme) => ({ ...theme, width }))
 }
 
 function formPadding({ value, setTheme, measureUnit }: rangeFunctionProps) {
   const formPadding = value + measureUnit
-  setTheme({ formPadding })
+  setTheme((theme) => ({ ...theme, formPadding }))
+}
+
+function formBorderWeight({
+  value,
+  setTheme,
+  measureUnit
+}: rangeFunctionProps) {
+  const formBorderWeight = value + measureUnit
+  setTheme((theme) => ({ ...theme, formBorderWeight }))
 }
 
 function formBorderRadius({
@@ -25,7 +34,7 @@ function formBorderRadius({
   measureUnit
 }: rangeFunctionProps) {
   const formBorderRadius = value + measureUnit
-  setTheme({ formBorderRadius })
+  setTheme((theme) => ({ ...theme, formBorderRadius }))
 }
 
 function headingBorderRadius({
@@ -34,7 +43,21 @@ function headingBorderRadius({
   measureUnit
 }: rangeFunctionProps) {
   const headingBorderRadius = value + measureUnit
-  setTheme({ headingBorderRadius })
+  setTheme((theme) => ({ ...theme, headingBorderRadius }))
+}
+
+function headingBorderBottom({
+  value,
+  setTheme,
+  measureUnit
+}: rangeFunctionProps) {
+  const headingBorderBottom = value + measureUnit
+  setTheme((theme) => ({ ...theme, headingBorderBottom }))
+}
+
+function headingSize({ value, setTheme, measureUnit }: rangeFunctionProps) {
+  const headingSize = value + measureUnit
+  setTheme((theme) => ({ ...theme, headingSize }))
 }
 
 function inputBorderRadius({
@@ -43,7 +66,16 @@ function inputBorderRadius({
   measureUnit
 }: rangeFunctionProps) {
   const inputBorderRadius = value + measureUnit
-  setTheme({ inputBorderRadius })
+  setTheme((theme) => ({ ...theme, inputBorderRadius }))
+}
+
+function inputBorderWeight({
+  value,
+  setTheme,
+  measureUnit
+}: rangeFunctionProps) {
+  const inputBorderWeight = value + measureUnit
+  setTheme((theme) => ({ ...theme, inputBorderWeight }))
 }
 
 function messageInputHeight({
@@ -52,12 +84,12 @@ function messageInputHeight({
   measureUnit
 }: rangeFunctionProps) {
   const messageInputHeight = value + measureUnit
-  setTheme({ messageInputHeight })
+  setTheme((theme) => ({ ...theme, messageInputHeight }))
 }
 
 function buttonPadding({ value, setTheme, measureUnit }: rangeFunctionProps) {
   const buttonPadding = value + measureUnit
-  setTheme({ buttonPadding })
+  setTheme((theme) => ({ ...theme, buttonPadding }))
 }
 
 function buttonLetterSpacing({
@@ -66,7 +98,7 @@ function buttonLetterSpacing({
   measureUnit
 }: rangeFunctionProps) {
   const buttonLetterSpacing = value + measureUnit
-  setTheme({ buttonLetterSpacing })
+  setTheme((theme) => ({ ...theme, buttonLetterSpacing }))
 }
 
 export default {
@@ -78,5 +110,9 @@ export default {
   inputBorderRadius,
   messageInputHeight,
   buttonPadding,
-  buttonLetterSpacing
+  buttonLetterSpacing,
+  headingSize,
+  formBorderWeight,
+  headingBorderBottom,
+  inputBorderWeight
 }

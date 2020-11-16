@@ -1,4 +1,5 @@
 import React, { ChangeEvent } from 'react'
+import fontFunctions from './helpers/fontFunctions'
 
 type OptionProps = {
   setTheme?: any
@@ -52,9 +53,8 @@ const fonts: string[] = [
 
 const Fonts = ({ setTheme }: OptionProps) => {
   const handleThemeChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    event.preventDefault()
     const value = event.target.value
-    setTheme({ primaryFont: `${value}` })
+    fontFunctions.primaryFont({ value, setTheme })
   }
 
   return (

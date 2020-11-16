@@ -5,7 +5,8 @@ export const StyledHeading = styled.h1`
   color: ${(props: any) => props.theme.headingColor};
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: ${(props: any) => props.theme.headingBorderBottom};
+  border-bottom: ${(props: any) => props.theme.headingBorderBottom} solid
+    ${(props: any) => props.theme.headingBorderColor};
   font-family: ${(props: any) => props.theme.primaryFont};
   font-size: ${(props: any) => props.theme.headingSize};
   background-color: ${(props: any) => props.theme.headingBackgroundColor};
@@ -17,7 +18,8 @@ export const StyledInput = styled.input`
   box-sizing: border-box;
   width: 100%;
   border-radius: ${(props: any) => props.theme.inputBorderRadius};
-  border: ${(props: any) => props.theme.inputBorder};
+  border: ${(props: any) => props.theme.inputBorderWeight} solid
+    ${(props: any) => props.theme.inputBorderColor};
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -30,7 +32,8 @@ export const StyledMessageInput = styled.input`
   box-sizing: border-box;
   width: 100%;
   border-radius: ${(props: any) => props.theme.inputBorderRadius};
-  border: ${(props: any) => props.theme.inputBorder};
+  border: ${(props: any) => props.theme.inputBorderWeight} solid
+    ${(props: any) => props.theme.inputBorderColor};
   padding: 10x 15px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -82,6 +85,8 @@ export const StyledForm = styled.form`
   width: ${(props: any) => props.theme.width};
   margin: auto;
   margin-top: 1em;
+  border: ${(props: any) => props.theme.formBorderWeight} solid
+    ${(props: any) => props.theme.formBorderColor};
   color: ${(props: any) => props.theme.primaryColor};
   background-color: ${(props: any) => props.theme.backgroundColor};
   padding: ${(props: any) => props.theme.formPadding};

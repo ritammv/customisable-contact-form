@@ -50,7 +50,20 @@ const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
           name='formPadding'
           setTheme={setTheme}
         />
-        <h3>Form Border</h3>
+        <RangeComponent
+          min={0}
+          max={5}
+          rangeName={'Form Border Weight'}
+          measureUnit={'px'}
+          name='formBorderWeight'
+          setTheme={setTheme}
+        />
+        <ColorComponent
+          name='formBorderColor'
+          setTheme={setTheme}
+          colorName='Form Border colors'
+        />
+
         <RangeComponent
           min={0}
           max={130}
@@ -81,7 +94,32 @@ const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
           name='headingBorderRadius'
           setTheme={setTheme}
         />
-        <h3>Heading Border Bottom</h3>
+        <RangeComponent
+          min={5}
+          max={80}
+          rangeName={'Heading Size'}
+          measureUnit='px'
+          name='headingSize'
+          setTheme={setTheme}
+        />
+        <ColorComponent
+          name='headingColor'
+          setTheme={setTheme}
+          colorName='Heading Color'
+        />
+        <RangeComponent
+          min={0}
+          max={5}
+          rangeName={'Heading Border Bottom'}
+          measureUnit={'px'}
+          name='headingBorderBottom'
+          setTheme={setTheme}
+        />
+        <ColorComponent
+          name='headingBorderColor'
+          setTheme={setTheme}
+          colorName='Heading Border Color'
+        />
       </div>
       <div className='input_customisation'>
         <h1>Customise your inputs!</h1>
@@ -93,7 +131,20 @@ const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
           name='inputBorderRadius'
           setTheme={setTheme}
         />
-        <h3>Input Border </h3>
+        <RangeComponent
+          min={0}
+          max={5}
+          rangeName={'Input Border Weight'}
+          measureUnit={'px'}
+          name='inputBorderWeight'
+          setTheme={setTheme}
+        />
+        <ColorComponent
+          name='inputBorderColor'
+          setTheme={setTheme}
+          colorName='Input Border Color'
+        />
+
         <ColorComponent
           name='inputBackgroundColor'
           setTheme={setTheme}

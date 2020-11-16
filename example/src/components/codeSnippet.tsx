@@ -25,8 +25,13 @@ type Theme = {
   headingBorderRadius?: string
   buttonPadding?: string
   buttonLetterSpacing?: string
-  headingBorderBottom?: string
   messageInputHeight?: string
+  formBorderColor?: string
+  formBorderWeight?: string
+  headingBorderBottom?: string
+  headingBorderColor?: string
+  inputBorderWeight?: string
+  inputBorderColor?: string
 }
 
 const CodeSnippet = ({ theme, title }: codeProps) => {
@@ -35,27 +40,34 @@ const CodeSnippet = ({ theme, title }: codeProps) => {
   })
 
   const codeOutput = `
-  <Form theme={'primaryColor: ${theme.primaryColor}',
-  'primaryFont?: ${theme.primaryFont}',
-  'inputBorderRadius?: ${theme.inputBorderRadius}',
-  'inputBorder?: ${theme.inputBorder}',
-  'inputBackgroundColor?: ${theme.inputBackgroundColor}',
-  'width?: ${theme.width}',
-  'fontWeight?: ${theme.fontWeight}',
-  'buttonFontColor?: ${theme.buttonFontColor}',
-  'headingColor?: ${theme.headingColor}',
-  'headingSize?: ${theme.headingSize}',
-  'backgroundColor?: ${theme.backgroundColor}',
-  'buttonBackgroundColor?: ${theme.buttonBackgroundColor}',
-  'formPadding?: ${theme.formPadding}',
-  'formBorderRadius?: ${theme.formBorderRadius}',
-  'headingBackgroundColor?: ${theme.headingBackgroundColor}',
-  'headingBorderRadius?: ${theme.headingBorderRadius}',
-  'buttonPadding?: ${theme.buttonPadding}',
-  'buttonLetterSpacing?: ${theme.buttonLetterSpacing}',
-  'headingBorderBottom?: ${theme.headingBorderBottom}',
-  'messageInputHeight?: ${theme.messageInputHeight}'
-}
+  <Form theme={
+    primaryColor: '${theme.primaryColor}',
+    primaryFont: '${theme.primaryFont}',
+    inputBorderRadius: '${theme.inputBorderRadius}',
+    inputBorder: '${theme.inputBorder}',
+    inputBackgroundColor: '${theme.inputBackgroundColor}',
+    width: '${theme.width}',
+    fontWeight: '${theme.fontWeight}',
+    buttonFontColor: '${theme.buttonFontColor}',
+    headingColor: '${theme.headingColor}',
+    headingSize: '${theme.headingSize}',
+    backgroundColor: '${theme.backgroundColor}',
+    buttonBackgroundColor: '${theme.buttonBackgroundColor}',
+    formPadding: '${theme.formPadding}',
+    formBorderRadius: '${theme.formBorderRadius}',
+    headingBackgroundColor: '${theme.headingBackgroundColor}',
+    headingBorderRadius: '${theme.headingBorderRadius}',
+    buttonPadding: '${theme.buttonPadding}',
+    buttonLetterSpacing: '${theme.buttonLetterSpacing}',
+    messageInputHeight: '${theme.messageInputHeight}',
+    formBorderColor: '${theme.formBorderColor}',
+    formBorderWeight: '${theme.formBorderWeight}',
+    headingBorderBottom: '${theme.headingBorderBottom}',
+    headingBorderColor: '${theme.headingBorderColor}',
+    inputBorderWeight: '${theme.inputBorderWeight}',
+    inputBorderColor: '${theme.inputBorderColor}'
+
+    }
   <Heading title='${title}'/>
   <FirstName/>
   <LastName/>

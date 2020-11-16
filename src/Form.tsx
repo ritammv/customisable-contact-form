@@ -44,14 +44,18 @@ const defaultTheme = {
   headingColor: 'black',
   inputBackgroundColor: 'white',
   inputBorderRadius: '15px',
-  inputBorder: '2px solid grey',
+  inputBorderWeight: '2px',
+  inputBorderColor: 'grey',
   formPadding: '30px',
   formBorderRadius: '35px',
+  formBorderWeight: '1px',
+  formBorderColor: 'grey',
   backgroundColor: 'white',
   title: 'bonjour',
   fontWeight: '200',
   width: '325px',
-  headingBorderBottom: '2px solid grey',
+  headingBorderBottom: '2px',
+  headingBorderColor: 'black',
   messageInputHeight: '70px'
 }
 

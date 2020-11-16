@@ -7,7 +7,7 @@ type RangeComponents = {
   rangeName: string
   measureUnit: string
   name: string
-  setTheme: any
+  setTheme: React.Dispatch<React.SetStateAction<{}>>
 }
 
 const RangeComponent = ({
