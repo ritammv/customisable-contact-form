@@ -1,47 +1,44 @@
 import styled from 'styled-components'
 
-
 export const StyledHeading = styled.h1`
   font-weight: ${(props: any) => props.theme.fontWeight};
-  color: ${(props : any) => props.theme.headingColor};
+  color: ${(props: any) => props.theme.headingColor};
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: ${(props : any) => props.theme.headingBorderBottom};
+  border-bottom: ${(props: any) => props.theme.headingBorderBottom};
   font-family: ${(props: any) => props.theme.primaryFont};
   font-size: ${(props: any) => props.theme.headingSize};
   background-color: ${(props: any) => props.theme.headingBackgroundColor};
   border-radius: ${(props: any) => props.theme.headingBorderRadius};
-  
 `
 
-export const StyledInput = styled.input `
+export const StyledInput = styled.input`
   display: block;
   box-sizing: border-box;
   width: 100%;
-  border-radius: ${(props:  any) => props.theme.inputBorderRadius};
+  border-radius: ${(props: any) => props.theme.inputBorderRadius};
   border: ${(props: any) => props.theme.inputBorder};
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
   height: 40px;
-  background-color: ${(props: any) => props.theme.inputBackgroundColor}
-  `
+  background-color: ${(props: any) => props.theme.inputBackgroundColor};
+`
 
 export const StyledMessageInput = styled.input`
   display: block;
   box-sizing: border-box;
   width: 100%;
-  border-radius: ${(props:  any) => props.theme.inputBorderRadius};
+  border-radius: ${(props: any) => props.theme.inputBorderRadius};
   border: ${(props: any) => props.theme.inputBorder};
   padding: 10x 15px;
   margin-bottom: 10px;
   font-size: 14px;
-  background-color: ${(props: any) => props.theme.inputBackgroundColor}; 
+  background-color: ${(props: any) => props.theme.inputBackgroundColor};
   height: ${(props: any) => props.theme.messageInputHeight};
+`
 
-`  
-
-export const StyledLabel = styled.label ` 
+export const StyledLabel = styled.label`
   line-height: 2;
   text-align: left;
   display: block;
@@ -50,19 +47,19 @@ export const StyledLabel = styled.label `
   color: ${(props: any) => props.theme.primaryColor};
   font-size: 14px;
   font-weight: 200;
-  font-family: ${(props:any) => props.theme.primaryFont};
-  `
+  font-family: ${(props: any) => props.theme.primaryFont};
+`
 export const StyledButton = styled.input`
   display: block;
   box-sizing: border-box;
   width: 100%;
-  border-radius: ${(props:any) => props.theme.inputBorderRadius};
-  border: ${(props:any) => props.theme.inputBorder};
+  border-radius: ${(props: any) => props.theme.inputBorderRadius};
+  border: ${(props: any) => props.theme.inputBorder};
   padding: 10px 15px;
   margin-bottom: 10px;
   background: grey;
   background-color: ${(props: any) => props.theme.buttonBackgroundColor};
-  color: ${(props:  any) => props.theme.buttonFontColor};
+  color: ${(props: any) => props.theme.buttonFontColor};
   text-transform: uppercase;
   border: none;
   margin-top: 40px;
@@ -81,18 +78,12 @@ export const StyledButton = styled.input`
   }
 `
 
-
-
 export const StyledForm = styled.form`
-  width: ${(props:any) => props.theme.width};
+  width: ${(props: any) => props.theme.width};
   margin: auto;
   margin-top: 1em;
   color: ${(props: any) => props.theme.primaryColor};
-  background-color: ${(props:any) => props.theme.backgroundColor};
-  padding: ${(props:any) => props.theme.formPadding};
-  border-radius: ${(props:any) => props.theme.formBorderRadius};
-
-
- 
+  background-color: ${(props: any) => props.theme.backgroundColor};
+  padding: ${(props: any) => props.theme.formPadding};
+  border-radius: ${(props: any) => props.theme.formBorderRadius};
 `
-  

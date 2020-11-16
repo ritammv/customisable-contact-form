@@ -1,9 +1,8 @@
 import React, { ChangeEvent } from 'react'
 
-
 type OptionProps = {
-  setTheme?: any;
-  theme?: Object;
+  setTheme?: any
+  theme?: Object
 }
 
 const fonts: string[] = [
@@ -49,22 +48,21 @@ const fonts: string[] = [
   'Stencil Std',
   'Marker Felt',
   'Trattatello',
-  'fantasy',
-];
+  'fantasy'
+]
 
 const Fonts = ({ setTheme }: OptionProps) => {
-
   const handleThemeChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    event.preventDefault();
-    const value = event.target.value;
-    setTheme({primaryFont : `${value}`});
-  };
+    event.preventDefault()
+    const value = event.target.value
+    setTheme({ primaryFont: `${value}` })
+  }
 
   return (
-    <select onChange = {handleThemeChange}>
+    <select onChange={handleThemeChange}>
       <option>Select a Font!</option>
-      {fonts.sort().map(font => (
-        <option key = {font} value={font}>
+      {fonts.sort().map((font) => (
+        <option key={font} value={font}>
           {font[0].toUpperCase() + font.slice(1)}
         </option>
       ))}
@@ -72,4 +70,4 @@ const Fonts = ({ setTheme }: OptionProps) => {
   )
 }
 
-export default Fonts;
+export default Fonts
