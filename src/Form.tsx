@@ -50,7 +50,7 @@ const defaultTheme = {
   backgroundColor: 'white',
   title: 'bonjour',
   fontWeight: '200',
-  width: '350px',
+  width: '325px',
   headingBorderBottom: '2px solid grey',
   messageInputHeight: '70px'
 }

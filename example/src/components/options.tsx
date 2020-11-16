@@ -1,25 +1,25 @@
 import React from 'react'
-import { Theme } from '../../../dist/Form'
 import Fonts from './Fonts'
 import RangeComponent from './RangeComponent'
 import Title from './Title'
 import ColorComponent from './colorComponents'
+import CodeSnippet from './codeSnippet'
 
 type OptionProps = {
-  title: string
   setTitle: any
-  theme: Theme
   setTheme: any
+  theme: any
+  title: string
 }
 
-const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
+const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
   return (
     <div className='options'>
-      <h1>Customisation through the components props!</h1>
+      <h1>Customisation through props!</h1>
       <div className='Form Customisation'>
         <h1>Customise the form!</h1>
         <h3>Font</h3>
-        <Fonts theme={theme} setTheme={setTheme} />
+        <Fonts setTheme={setTheme} />
         <RangeComponent
           min={100}
           max={900}
@@ -67,7 +67,7 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
       </div>
       <div className='heading_customisation'>
         <h1>Customise your heading!</h1>
-        <Title title={title} setTitle={setTitle} />
+        <Title setTitle={setTitle} />
         <ColorComponent
           name='headingBackgroundColor'
           setTheme={setTheme}
@@ -140,8 +140,8 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
           colorName='Button Background Color'
         />
       </div>
-      <div className='code_snippet'>
-        <h1>Grab your code</h1>
+      <div className='code'>
+        <CodeSnippet title={title} theme={theme} />
       </div>
     </div>
   )

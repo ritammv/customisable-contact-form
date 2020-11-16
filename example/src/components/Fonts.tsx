@@ -2,7 +2,6 @@ import React, { ChangeEvent } from 'react'
 
 type OptionProps = {
   setTheme?: any
-  theme?: Object
 }
 
 const fonts: string[] = [

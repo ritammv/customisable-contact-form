@@ -23,9 +23,8 @@ const FormContainer = styled.div`
   display: flex;
   flex-direction: row;
   padding: 40px;
-  border: 1px solid lightgrey;
-  background-color: red;
   height: auto;
+  overflow: scroll;
 `
 
 const Customisation = styled.div`
@@ -33,7 +32,6 @@ const Customisation = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: row;
-  background-color: blue;
   padding-left: 30px;
   overflow: scroll;
 `
@@ -57,9 +55,9 @@ const App = () => {
 
       <Customisation className='customisation'>
         <OptionForm
+          theme={theme}
           title={title}
           setTitle={setTitle}
-          theme={theme}
           setTheme={setTheme}
         />
       </Customisation>
