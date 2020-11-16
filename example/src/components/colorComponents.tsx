@@ -1,16 +1,17 @@
 import React, { FormEventHandler } from 'react'
+import colorFunctions from './helpers/colorfunctions'
 
 type colorComponents = {
-  measureUnit: string
   name: string
   setTheme: any
   colorName: string
 }
 
-const ColorComponent = ({ name, colorName }: colorComponents) => {
+const ColorComponent = ({ name, colorName, setTheme }: colorComponents) => {
   const handleChange: FormEventHandler<HTMLInputElement> = (event) => {
-    console.log(event.currentTarget.name)
-    console.log(event.currentTarget.value)
+    const name = event.currentTarget.name
+    const value = event.currentTarget.value
+    colorFunctions[name]({ value, setTheme })
   }
 
   return (

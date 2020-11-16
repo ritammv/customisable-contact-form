@@ -31,7 +31,6 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
 
         <ColorComponent
           name='primaryColor'
-          measureUnit=''
           setTheme={setTheme}
           colorName='Form primary colors'
         />
@@ -61,8 +60,7 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
           setTheme={setTheme}
         />
         <ColorComponent
-          name='formBackgroundColor'
-          measureUnit=''
+          name='backgroundColor'
           setTheme={setTheme}
           colorName='Form Background Color'
         />
@@ -72,7 +70,6 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
         <Title title={title} setTitle={setTitle} />
         <ColorComponent
           name='headingBackgroundColor'
-          measureUnit=''
           setTheme={setTheme}
           colorName='Heading Background Color'
         />
@@ -99,7 +96,6 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
         <h3>Input Border </h3>
         <ColorComponent
           name='inputBackgroundColor'
-          measureUnit=''
           setTheme={setTheme}
           colorName='Input Background Color'
         />
@@ -119,7 +115,6 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
         <h1>Customise your Button!</h1>
         <ColorComponent
           name='buttonFontColor'
-          measureUnit=''
           setTheme={setTheme}
           colorName='Button Font Color'
         />
@@ -141,7 +136,6 @@ const OptionForm = ({ title, setTitle, theme, setTheme }: OptionProps) => {
         />
         <ColorComponent
           name='buttonBackgroundColor'
-          measureUnit=''
           setTheme={setTheme}
           colorName='Button Background Color'
         />
