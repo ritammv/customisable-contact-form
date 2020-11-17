@@ -41,8 +41,8 @@ const OptionForm = ({
           <h3>npm install react-customisable-contact-form</h3>
           <p>
             follow the docs on <span className='boldtitle'>npm!</span>
-            <br /> customise your contact form below & grab the code snippet...
-            paste into your project and enjoy your stress free, validated and
+            <br /> customise your contact form below, grab the code snippet &
+            paste into your project. Enjoy your stress free, validated and
             customisable form in seconds 🌼
           </p>
         </div>
@@ -213,7 +213,7 @@ const OptionForm = ({
         />
         <RangeComponent
           min={0}
-          max={35}
+          max={20}
           rangeName={'Button Letter Spacing'}
           measureUnit={'px'}
           name='buttonLetterSpacing'

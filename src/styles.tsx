@@ -76,6 +76,7 @@ export const StyledButton = styled.button`
   display: flex;
   justify-content: center;
   letter-spacing: ${(props: any) => props.theme.buttonLetterSpacing};
+  margin-right: ${(props: any) => '-' + props.theme.buttonLetterSpacing};
   &:hover {
     background: ${(props: any) => props.theme.buttonHoverColor};
   }

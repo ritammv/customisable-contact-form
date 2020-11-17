@@ -43,7 +43,7 @@ const App = () => {
       </div>
       <div className='footer'>
         <footer>Made with 🖤 by Ritam Verma</footer>
-        <a href='www.https://github.com/ritammv'>Github </a>
+        <a href='https://github.com/ritammv'>Github </a>
         <a href='https://www.linkedin.com/in/ritammv/'>LinkedIn</a>
       </div>
     </div>

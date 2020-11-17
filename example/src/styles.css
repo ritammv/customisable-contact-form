@@ -151,8 +151,9 @@ select {
 
 .footer {
   text-align: center;
-  margin-right: 40px;
+  margin-right: 20px;
   background-color: #fbf8f5;
   padding: 15px;
   padding-bottom: 20px;
+  width: 100%;
 }

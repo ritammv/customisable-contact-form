@@ -54,16 +54,19 @@ const CodeSnippet = ({ theme, title, buttonTitle }: codeProps) => {
     }, ``)
     .trim()
 
+  const propTitle = title ? ` title="${title}"` : ''
+  const propButtonTitle = buttonTitle ? ` buttonTitle="${buttonTitle}"` : ''
+
   const codeOutput = `
   <Form theme={
     ${string}
     }
-  <Heading title='${title}'/>
+  <Heading${propTitle}/>
   <FirstName/>
   <LastName/>
   <Email/>
   <Message/>
-  <SubmitButton buttonTitle='${buttonTitle}' />
+  <SubmitButton${propButtonTitle}/>
   />
   `
   return (
