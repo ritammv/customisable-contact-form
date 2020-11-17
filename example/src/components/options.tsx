@@ -27,14 +27,28 @@ const OptionForm = ({
   return (
     <div className='options'>
       <div className='information'>
-        <h1>React Customisable Contact Form 👑</h1>
+        <h1>
+          React Customisable Contact Form <span role='img'>👑 </span>
+        </h1>
         <h3>
           A simple but highly customisable 'contact-me' component written in
           Typescript with React
         </h3>
       </div>
+      <div className='installation'>
+        <h4>How to Install</h4>
+        <div className='installation_guide'>
+          <h3>npm install react-customisable-contact-form</h3>
+          <p>
+            follow the docs on <span className='boldtitle'>npm!</span>
+            <br /> customise your contact form below & grab the code snippet...
+            paste into your project and enjoy your stress free, validated and
+            customisable form in seconds 🌼
+          </p>
+        </div>
+      </div>
       <div className='form_customisation'>
-        <h4>Customise the form!</h4>
+        <h4>Customise the form 🌱</h4>
         <p> Form Font</p>
         <Fonts setTheme={setTheme} />
         <RangeComponent
@@ -96,7 +110,7 @@ const OptionForm = ({
         />
       </div>
       <div className='heading_customisation'>
-        <h4>Customise your heading!</h4>
+        <h4>Customise your heading 🌿 </h4>
         <p>Title</p>
         <Title setTitle={setTitle} />
         <ColorComponent
@@ -140,7 +154,7 @@ const OptionForm = ({
         />
       </div>
       <div className='input_customisation'>
-        <h4>Customise your inputs!</h4>
+        <h4>Customise your inputs 🍃 </h4>
         <RangeComponent
           min={0}
           max={50}
@@ -170,7 +184,7 @@ const OptionForm = ({
         />
       </div>
       <div className='message_input_customisation'>
-        <h4>Customise your message input!</h4>
+        <h4>Customise your message input 🍀 </h4>
         <RangeComponent
           min={50}
           max={200}
@@ -181,7 +195,7 @@ const OptionForm = ({
         />
       </div>
       <div className='button_customisation'>
-        <h4>Customise your Button!</h4>
+        <h4>Customise your Button 🌳 </h4>
         <p>Button Title</p>
         <ButtonTitle setButtonTitle={setButtonTitle} />
         <ColorComponent
@@ -210,9 +224,15 @@ const OptionForm = ({
           setTheme={setTheme}
           colorName='Button Background Color'
         />
+
+        <ColorComponent
+          name='buttonHoverColor'
+          setTheme={setTheme}
+          colorName='Button Hover Color'
+        />
       </div>
       <div className='code'>
-        <h4>Grab Your Component!</h4>
+        <h4>Grab Your Component 💥 </h4>
 
         <CodeSnippet
           title={title}

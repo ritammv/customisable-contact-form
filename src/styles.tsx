@@ -77,11 +77,11 @@ export const StyledButton = styled.button`
   justify-content: center;
   letter-spacing: ${(props: any) => props.theme.buttonLetterSpacing};
   &:hover {
-    background: grey;
+    background: ${(props: any) => props.theme.buttonHoverColor};
   }
   &:active {
     transition: 0.3s all;
-    transform: translateY(3px);
+    transform: translateY(5px);
     border: 1px solid transparent;
     opacity: 0.8;
   }

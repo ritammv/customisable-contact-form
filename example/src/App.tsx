@@ -17,27 +17,34 @@ const App = () => {
   const [buttonTitle, setButtonTitle] = useState('')
 
   return (
-    <div className='demo_container'>
-      <div className='form_demo'>
-        <Form theme={theme}>
-          <Heading title={title} />
-          <FirstName />
-          <LastName />
-          <Email />
-          <Message />
-          <SubmitButton buttonTitle={buttonTitle} />
-        </Form>
-      </div>
+    <div className='website_container'>
+      <div className='demo_container'>
+        <div className='form_demo'>
+          <Form theme={theme}>
+            <Heading title={title} />
+            <FirstName />
+            <LastName />
+            <Email />
+            <Message />
+            <SubmitButton buttonTitle={buttonTitle} />
+          </Form>
+        </div>
 
-      <div className='customisation_options'>
-        <OptionForm
-          theme={theme}
-          title={title}
-          setTitle={setTitle}
-          setTheme={setTheme}
-          buttonTitle={buttonTitle}
-          setButtonTitle={setButtonTitle}
-        />
+        <div className='customisation_options'>
+          <OptionForm
+            theme={theme}
+            title={title}
+            setTitle={setTitle}
+            setTheme={setTheme}
+            buttonTitle={buttonTitle}
+            setButtonTitle={setButtonTitle}
+          />
+        </div>
+      </div>
+      <div className='footer'>
+        <footer>Made with 🖤 by Ritam Verma</footer>
+        <a href='www.https://github.com/ritammv'>Github </a>
+        <a href='https://www.linkedin.com/in/ritammv/'>LinkedIn</a>
       </div>
     </div>
   )

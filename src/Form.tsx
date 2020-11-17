@@ -24,6 +24,7 @@ export interface Theme {
   buttonLetterSpacing?: string
   headingBorderBottom?: string
   messageInputHeight?: string
+  buttonHoverColor?: string
 }
 
 export interface formProps {
@@ -38,7 +39,7 @@ const defaultTheme = {
   buttonPadding: '20px',
   buttonBackgroundColor: 'black',
   buttonFontColor: 'white',
-  headingBackgroundColor: 'white',
+  headingBackgroundColor: '#fbf8f5',
   headingBorderRadius: '',
   headingSize: '30px',
   headingColor: 'black',
@@ -50,13 +51,14 @@ const defaultTheme = {
   formBorderRadius: '35px',
   formBorderWeight: '1px',
   formBorderColor: 'grey',
-  backgroundColor: 'white',
+  backgroundColor: '#fbf8f5',
   title: 'bonjour',
   fontWeight: '200',
   width: '325px',
   headingBorderBottom: '2px',
   headingBorderColor: 'black',
-  messageInputHeight: '70px'
+  messageInputHeight: '70px',
+  buttonHoverColor: 'grey'
 }
 
 function Form({ children, theme }: formProps) {

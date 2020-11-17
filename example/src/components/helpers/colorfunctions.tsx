@@ -51,6 +51,11 @@ function buttonBackgroundColor({ value, setTheme }: colorFunctionProps) {
   const buttonBackgroundColor = value
   setTheme((theme) => ({ ...theme, buttonBackgroundColor }))
 }
+function buttonHoverColor({ value, setTheme }: colorFunctionProps) {
+  const buttonHoverColor = value
+  setTheme((theme) => ({ ...theme, buttonHoverColor }))
+}
+
 export default {
   primaryColor,
   backgroundColor,
@@ -61,5 +66,6 @@ export default {
   headingColor,
   formBorderColor,
   headingBorderColor,
-  inputBorderColor
+  inputBorderColor,
+  buttonHoverColor
 }
