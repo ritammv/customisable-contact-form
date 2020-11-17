@@ -11,6 +11,8 @@ export const StyledHeading = styled.h1`
   font-size: ${(props: any) => props.theme.headingSize};
   background-color: ${(props: any) => props.theme.headingBackgroundColor};
   border-radius: ${(props: any) => props.theme.headingBorderRadius};
+  display: flex;
+  justify-content: center;
 `
 
 export const StyledInput = styled.input`
@@ -52,7 +54,7 @@ export const StyledLabel = styled.label`
   font-weight: 200;
   font-family: ${(props: any) => props.theme.primaryFont};
 `
-export const StyledButton = styled.input`
+export const StyledButton = styled.button`
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -61,6 +63,7 @@ export const StyledButton = styled.input`
   padding: 10px 15px;
   margin-bottom: 10px;
   background: grey;
+  text-align: center;
   background-color: ${(props: any) => props.theme.buttonBackgroundColor};
   color: ${(props: any) => props.theme.buttonFontColor};
   text-transform: uppercase;
@@ -69,6 +72,8 @@ export const StyledButton = styled.input`
   padding: ${(props: any) => props.theme.buttonPadding};
   font-size: 16px;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
   letter-spacing: ${(props: any) => props.theme.buttonLetterSpacing};
   &:hover {
     background: grey;
@@ -91,4 +96,7 @@ export const StyledForm = styled.form`
   background-color: ${(props: any) => props.theme.backgroundColor};
   padding: ${(props: any) => props.theme.formPadding};
   border-radius: ${(props: any) => props.theme.formBorderRadius};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `

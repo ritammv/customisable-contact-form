@@ -4,6 +4,7 @@ import Prism from 'prismjs'
 type codeProps = {
   theme: Theme
   title: string
+  buttonTitle: string
 }
 
 type Theme = {
@@ -34,7 +35,7 @@ type Theme = {
   inputBorderColor?: string
 }
 
-const CodeSnippet = ({ theme, title }: codeProps) => {
+const CodeSnippet = ({ theme, title, buttonTitle }: codeProps) => {
   useEffect(() => {
     Prism.highlightAll()
   })
@@ -46,7 +47,7 @@ const CodeSnippet = ({ theme, title }: codeProps) => {
       else
         return (
           a +
-          `${b}: ${theme[b]},
+          `${b}: "${theme[b]}",
     `
         )
     }, ``)
@@ -61,7 +62,7 @@ const CodeSnippet = ({ theme, title }: codeProps) => {
   <LastName/>
   <Email/>
   <Message/>
-  <SubmitButton/>
+  <SubmitButton buttonTitle='${buttonTitle}' />
   />
   `
   return (

@@ -3,7 +3,7 @@ import colorFunctions from './helpers/colorfunctions'
 
 type colorComponents = {
   name: string
-  setTheme: any
+  setTheme: React.Dispatch<React.SetStateAction<{}>>
   colorName: string
 }
 

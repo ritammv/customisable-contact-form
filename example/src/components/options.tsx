@@ -4,15 +4,25 @@ import RangeComponent from './RangeComponent'
 import Title from './Title'
 import ColorComponent from './colorComponents'
 import CodeSnippet from './codeSnippet'
+import ButtonTitle from './ButtonTitle'
 
 type OptionProps = {
-  setTitle: any
-  setTheme: any
+  setTitle: React.Dispatch<React.SetStateAction<string>>
+  setTheme: React.Dispatch<React.SetStateAction<{}>>
   theme: any
   title: string
+  buttonTitle: any
+  setButtonTitle: React.Dispatch<React.SetStateAction<string>>
 }
 
-const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
+const OptionForm = ({
+  title,
+  theme,
+  setTitle,
+  setTheme,
+  setButtonTitle,
+  buttonTitle
+}: OptionProps) => {
   return (
     <div className='options'>
       <h1>Customisation through props!</h1>
@@ -164,6 +174,7 @@ const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
       </div>
       <div className='button_customisation'>
         <h1>Customise your Button!</h1>
+        <ButtonTitle setButtonTitle={setButtonTitle} />
         <ColorComponent
           name='buttonFontColor'
           setTheme={setTheme}
@@ -192,7 +203,11 @@ const OptionForm = ({ title, theme, setTitle, setTheme }: OptionProps) => {
         />
       </div>
       <div className='code'>
-        <CodeSnippet title={title} theme={theme} />
+        <CodeSnippet
+          title={title}
+          theme={{ ...theme }}
+          buttonTitle={buttonTitle}
+        />
       </div>
     </div>
   )

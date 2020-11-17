@@ -1,0 +1,25 @@
+.demo_container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form_demo {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  height: auto;
+  overflow: scroll;
+  border: 2px solid grey;
+}
+
+.customisation_options {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 30px;
+  overflow: scroll;
+}

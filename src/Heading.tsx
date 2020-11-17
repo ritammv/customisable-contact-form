@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { StyledHeading } from './styles'
+import './styles.css'
 
 interface headingProps {
   title: string

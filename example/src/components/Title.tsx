@@ -1,7 +1,7 @@
 import React, { FormEventHandler } from 'react'
 
 type TitleProps = {
-  setTitle: any
+  setTitle: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Title = ({ setTitle }: TitleProps) => {

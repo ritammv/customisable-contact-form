@@ -1,10 +1,15 @@
 import * as React from 'react'
 import { StyledButton } from './styles'
+import './styles.css'
 
-function SubmitButton() {
+interface submitButtonProps {
+  buttonTitle: string
+}
+
+function SubmitButton({ buttonTitle }: submitButtonProps) {
   return (
-    <div className='button_wrapper'>
-      <StyledButton type='submit' />
+    <div className='buttonTitle_wrapper'>
+      <StyledButton type='submit'>{buttonTitle || 'Submit'}</StyledButton>
     </div>
   )
 }
