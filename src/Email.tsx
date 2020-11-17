@@ -13,7 +13,6 @@ function Email() {
     <div className='email_wrapper'>
       <StyledLabel>Email Address</StyledLabel>
       <StyledInput
-        type='text'
         name='email'
         ref={register({
           required: true,

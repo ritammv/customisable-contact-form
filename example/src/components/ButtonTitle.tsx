@@ -14,6 +14,7 @@ const ButtonTitle = ({ setButtonTitle }: ButtonTitleProps) => {
       <input
         placeholder='Type your Button Title here!'
         onChange={handleTitleChange}
+        type='text'
       />
     </div>
   )

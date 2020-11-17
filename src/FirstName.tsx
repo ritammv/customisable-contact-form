@@ -12,11 +12,7 @@ function FirstName() {
   return (
     <div className='first_name_wrapper'>
       <StyledLabel>First Name</StyledLabel>
-      <StyledInput
-        type='text'
-        name='firstName'
-        ref={register({ required: true })}
-      />
+      <StyledInput name='firstName' ref={register({ required: true })} />
       {errors.firstName && <p>This field is required</p>}
     </div>
   )

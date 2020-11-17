@@ -5,6 +5,7 @@ import Title from './Title'
 import ColorComponent from './colorComponents'
 import CodeSnippet from './codeSnippet'
 import ButtonTitle from './ButtonTitle'
+import '../styles.css'
 
 type OptionProps = {
   setTitle: React.Dispatch<React.SetStateAction<string>>
@@ -25,10 +26,16 @@ const OptionForm = ({
 }: OptionProps) => {
   return (
     <div className='options'>
-      <h1>Customisation through props!</h1>
-      <div className='Form Customisation'>
-        <h1>Customise the form!</h1>
-        <h3>Font</h3>
+      <div className='information'>
+        <h1>React Customisable Contact Form 👑</h1>
+        <h3>
+          A simple but highly customisable 'contact-me' component written in
+          Typescript with React
+        </h3>
+      </div>
+      <div className='form_customisation'>
+        <h4>Customise the form!</h4>
+        <p> Form Font</p>
         <Fonts setTheme={setTheme} />
         <RangeComponent
           min={100}
@@ -42,7 +49,7 @@ const OptionForm = ({
         <ColorComponent
           name='primaryColor'
           setTheme={setTheme}
-          colorName='Form primary colors'
+          colorName='Form Primary Color'
         />
         <RangeComponent
           min={300}
@@ -71,7 +78,7 @@ const OptionForm = ({
         <ColorComponent
           name='formBorderColor'
           setTheme={setTheme}
-          colorName='Form Border colors'
+          colorName='Form Border Colors'
         />
 
         <RangeComponent
@@ -89,7 +96,8 @@ const OptionForm = ({
         />
       </div>
       <div className='heading_customisation'>
-        <h1>Customise your heading!</h1>
+        <h4>Customise your heading!</h4>
+        <p>Title</p>
         <Title setTitle={setTitle} />
         <ColorComponent
           name='headingBackgroundColor'
@@ -106,7 +114,7 @@ const OptionForm = ({
         />
         <RangeComponent
           min={5}
-          max={80}
+          max={50}
           rangeName={'Heading Size'}
           measureUnit='px'
           name='headingSize'
@@ -132,7 +140,7 @@ const OptionForm = ({
         />
       </div>
       <div className='input_customisation'>
-        <h1>Customise your inputs!</h1>
+        <h4>Customise your inputs!</h4>
         <RangeComponent
           min={0}
           max={50}
@@ -162,7 +170,7 @@ const OptionForm = ({
         />
       </div>
       <div className='message_input_customisation'>
-        <h1>Customise your message input!</h1>
+        <h4>Customise your message input!</h4>
         <RangeComponent
           min={50}
           max={200}
@@ -173,7 +181,8 @@ const OptionForm = ({
         />
       </div>
       <div className='button_customisation'>
-        <h1>Customise your Button!</h1>
+        <h4>Customise your Button!</h4>
+        <p>Button Title</p>
         <ButtonTitle setButtonTitle={setButtonTitle} />
         <ColorComponent
           name='buttonFontColor'
@@ -203,6 +212,8 @@ const OptionForm = ({
         />
       </div>
       <div className='code'>
+        <h4>Grab Your Component!</h4>
+
         <CodeSnippet
           title={title}
           theme={{ ...theme }}

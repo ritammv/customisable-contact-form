@@ -33,8 +33,8 @@ export interface formProps {
 
 const defaultTheme = {
   primaryColor: 'black',
-  primaryFont: 'sans-serif',
-  buttonLetterSpacing: '30px',
+  primaryFont: 'Courier New',
+  buttonLetterSpacing: '20px',
   buttonPadding: '20px',
   buttonBackgroundColor: 'black',
   buttonFontColor: 'white',
@@ -46,7 +46,7 @@ const defaultTheme = {
   inputBorderRadius: '15px',
   inputBorderWeight: '2px',
   inputBorderColor: 'grey',
-  formPadding: '30px',
+  formPadding: '20px',
   formBorderRadius: '35px',
   formBorderWeight: '1px',
   formBorderColor: 'grey',

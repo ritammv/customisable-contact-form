@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Prism from 'prismjs'
+import '../styles.css'
 
 type codeProps = {
   theme: Theme
@@ -66,7 +67,7 @@ const CodeSnippet = ({ theme, title, buttonTitle }: codeProps) => {
   />
   `
   return (
-    <div className='code'>
+    <div className='code_snippet'>
       <pre>
         <code>{codeOutput}</code>
       </pre>

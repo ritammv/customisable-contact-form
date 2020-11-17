@@ -11,7 +11,11 @@ const Title = ({ setTitle }: TitleProps) => {
   }
   return (
     <div className='heading'>
-      <input placeholder='Type your title here!' onChange={handleFontChange} />
+      <input
+        placeholder='Type your title here!'
+        type='text'
+        onChange={handleFontChange}
+      />
     </div>
   )
 }
