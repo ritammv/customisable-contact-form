@@ -83,6 +83,12 @@ const theme = {
 }
 ```
 
+remember all of these fields are OPTIONAL and will revert back to the default if left untouched!
+
+## Contributions
+
+To contribute please refer to the Contributing.md
+
 ## License
 
 MIT © [ritammv](https://github.com/ritammv)
