@@ -38,7 +38,7 @@ const OptionForm = ({
       <div className='installation'>
         <h4>How to Install</h4>
         <div className='installation_guide'>
-          <h3>npm install react-customisable-contact-form</h3>
+          <h3>npm install customisable-contact-form</h3>
           <p>
             follow the docs on <span className='boldtitle'>npm!</span>
             <br /> customise your contact form below, grab the code snippet &
