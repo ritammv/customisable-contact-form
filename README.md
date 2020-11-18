@@ -32,18 +32,19 @@ Next - use it in your application!
 
 ```
 function example() {
-  render() {
-    return <Form theme={
-      buttonBackgroundColor = "red",
-    }
-    Heading title={'Hey guys!}
-    FirstName
-    LastName
-    Email
-    Message
-    SubmitButton buttonTitle={'Send'}
+
+    return (
+      <Form theme={
+        buttonBackgroundColor = "red",
+        }
+      <Heading title={'Hey guys!}/>
+      <FirstName/>
+      <LastName/>
+      <Email/>
+      <Message/>
+      <SubmitButton buttonTitle={'Send'}/>
     />
-  }
+    )
 }
 ```
 
