@@ -2,13 +2,14 @@
 
 > a simple but highly customisable react contact form component
 
-[![NPM](https://img.shields.io/npm/v/customisable-contact-form.svg)](https://www.npmjs.com/package/customisable-contact-form) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# First...head to the DEMO and check out how it works!
+
+[click here!](https://ritammv.github.io/customisable-contact-form/)
+
 
 ## Install
 
-```bash
-npm install customisable-contact-form
-```
+`npm i customisable-contact-form`
 
 you might also need to install peer dependencies
 
@@ -16,17 +17,14 @@ you might also need to install peer dependencies
 
 ## How to use!
 
-Firstly - check out the DEMO and customise your form!
+After checking out the [demo](https://ritammv.github.io/customisable-contact-form/) make sure you copy your code snippet at the end of the page
 
 Import what you need from the package - if you don't need a last name component then don't import it!!!
 
+`import Form from customisable-contact-form`
+`import {Heading, FirstName, LastName, Email, Message, SubmitButton} from 'customisable-contact-form`
+
 Grab the code and paste it into your project!
-
-```
-import Form from 'customisable-contact-form'
-import {Heading, FirstName, LastName, Email, Message, SubmitButton} from 'customisable-contact-form'
-
-```
 
 Next - use it in your application!
 
