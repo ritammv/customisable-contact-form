@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/Add a heading (1).png" />
+ </p>
+
 # customisable-contact-form
 
 > a simple but highly customisable react contact form component
