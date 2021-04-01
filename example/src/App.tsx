@@ -16,11 +16,12 @@ const App = () => {
   const [title, setTitle] = useState('')
   const [buttonTitle, setButtonTitle] = useState('')
 
+  const submitHandler = (data) => console.log(data)
   return (
     <div className='website_container'>
       <div className='demo_container'>
         <div className='form_demo'>
-          <Form theme={theme}>
+          <Form theme={theme} onSubmit={submitHandler}>
             <Heading title={title} />
             <FirstName />
             <LastName />
